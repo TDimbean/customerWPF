@@ -1,0 +1,139 @@
+2019-08-20 11:46:28.3364|INFO|CustomerWPF_DesktopClient.Views.MainWindow|Main Window opened.
+2019-08-20 13:13:00.3005|INFO|CustomerWPF_DesktopClient.Views.MainWindow|Main Window opened.
+2019-08-20 13:13:02.3816|DEBUG|CustomerWPF_DesktopClient.Views.MainWindow|"To Customers" Button pressed. 
+2019-08-20 13:13:02.3816|INFO|CustomerWPF_DesktopClient.Views.Customers|Displaying Customers View.
+2019-08-20 13:13:02.4156|INFO|CustomerWPF_DesktopClient.Views.Customers|Fetching all Customers from repo.
+2019-08-20 13:13:06.6277|INFO|CustomerWPF_DesktopClient.Views.Customers|Resetting page size to show all.
+2019-08-20 13:13:12.1918|INFO|CustomerWPF_DesktopClient.Views.Customers|Requesting Card Update Form.
+2019-08-20 13:13:12.1918|INFO|CustomerWPF_DesktopClient.Views.SubViews.CustomerUpdateView|Opened Customer Update Form.
+2019-08-20 13:13:19.8589|INFO|CustomerWPF_DesktopClient.Views.SubViews.CustomerUpdateView|Customer Update was submitted.
+2019-08-20 13:13:19.9219|INFO|CustomerWPF_Windows.CustomerService|Service verifying Customer Update View Model.
+2019-08-20 13:13:19.9219|INFO|CustomerWPF_Windows.CustomerService|Service approved Customer Update View Model.
+2019-08-20 13:13:19.9219|INFO|CustomerWPF_DesktopClient.Views.SubViews.CustomerUpdateView|Customer Update succesfully sent to repo.
+2019-08-20 13:13:19.9219|INFO|DAL.CustomerRepository|Repo updating Customer with code: 3742724
+2019-08-20 13:13:20.0977|INFO|CustomerWPF_DesktopClient.Views.Customers|Fetching all Customers from repo.
+2019-08-20 13:13:20.1228|INFO|CustomerWPF_DesktopClient.Views.Customers|Resetting page size to show all.
+2019-08-20 13:13:25.1385|INFO|CustomerWPF_DesktopClient.Views.Customers|Requested switch to Cards View.
+2019-08-20 13:13:25.1605|INFO|CustomerWPF_DesktopClient.Views.Cards|Displaying Cards View.
+2019-08-20 13:13:25.1755|INFO|CustomerWPF_DesktopClient.Views.Cards|Fetching all Cards from repo.
+2019-08-20 13:13:25.1755|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:13:25.2427|INFO|CustomerWPF_DesktopClient.Views.Cards|Resetting page size to show all.
+2019-08-20 13:13:25.2427|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:13:26.7570|INFO|CustomerWPF_DesktopClient.Views.Cards|Requested switch to Customers View.
+2019-08-20 13:13:26.7830|INFO|CustomerWPF_DesktopClient.Views.Customers|Displaying Customers View.
+2019-08-20 13:13:26.7830|INFO|CustomerWPF_DesktopClient.Views.Customers|Fetching all Customers from repo.
+2019-08-20 13:13:26.7830|INFO|CustomerWPF_DesktopClient.Views.Customers|Resetting page size to show all.
+2019-08-20 13:13:30.7671|INFO|CustomerWPF_DesktopClient.Views.Customers|Requested switch to Cards View.
+2019-08-20 13:13:30.7841|INFO|CustomerWPF_DesktopClient.Views.Cards|Displaying Cards View.
+2019-08-20 13:13:30.7841|INFO|CustomerWPF_DesktopClient.Views.Cards|Fetching all Cards from repo.
+2019-08-20 13:13:30.7841|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:13:30.8311|INFO|CustomerWPF_DesktopClient.Views.Cards|Resetting page size to show all.
+2019-08-20 13:13:30.8311|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:13:46.7145|INFO|CustomerWPF_DesktopClient.Views.Cards|Requesting Card Update Form.
+2019-08-20 13:13:46.7145|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Opened Card Update Form.
+2019-08-20 13:13:57.9195|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Card Update was submitted.
+2019-08-20 13:13:57.9195|INFO|CustomerWPF_Windows.CardService|Service verifying Card Update View Model.
+2019-08-20 13:13:57.9195|INFO|CustomerWPF_Windows.CardService|Service approved Card Update View Model.
+2019-08-20 13:13:57.9195|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Card Update succesfully sent to repo.
+2019-08-20 13:13:57.9874|INFO|DAL.CardRepository|Repo updating card with code: 85350442899173
+2019-08-20 13:13:57.9974|INFO|CustomerWPF_DesktopClient.Views.Cards|Fetching all Cards from repo.
+2019-08-20 13:13:57.9974|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:13:58.0554|INFO|CustomerWPF_DesktopClient.Views.Cards|Resetting page size to show all.
+2019-08-20 13:13:58.0554|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:14:01.8727|INFO|CustomerWPF_DesktopClient.Views.Cards|Requesting Card Update Form.
+2019-08-20 13:14:01.8727|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Opened Card Update Form.
+2019-08-20 13:14:13.1051|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Card Update was submitted.
+2019-08-20 13:14:13.1051|INFO|CustomerWPF_Windows.CardService|Service verifying Card Update View Model.
+2019-08-20 13:14:13.1051|INFO|CustomerWPF_Windows.CardService|Service approved Card Update View Model.
+2019-08-20 13:14:13.1051|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Card Update succesfully sent to repo.
+2019-08-20 13:14:13.1051|INFO|DAL.CardRepository|Repo updating card with code: 11010266652007
+2019-08-20 13:14:13.1051|INFO|CustomerWPF_DesktopClient.Views.Cards|Fetching all Cards from repo.
+2019-08-20 13:14:13.1051|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:14:13.1804|INFO|CustomerWPF_DesktopClient.Views.Cards|Resetting page size to show all.
+2019-08-20 13:14:13.1804|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:14:21.1018|INFO|CustomerWPF_DesktopClient.Views.Cards|Requesting Card Update Form.
+2019-08-20 13:14:21.1018|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Opened Card Update Form.
+2019-08-20 13:14:31.5222|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Card Update was submitted.
+2019-08-20 13:14:31.5222|INFO|CustomerWPF_Windows.CardService|Service verifying Card Update View Model.
+2019-08-20 13:14:31.5242|INFO|CustomerWPF_Windows.CardService|Service approved Card Update View Model.
+2019-08-20 13:14:31.5242|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Card Update succesfully sent to repo.
+2019-08-20 13:14:31.5242|INFO|DAL.CardRepository|Repo updating card with code: 64010226562267
+2019-08-20 13:14:31.5242|INFO|CustomerWPF_DesktopClient.Views.Cards|Fetching all Cards from repo.
+2019-08-20 13:14:31.5242|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:14:31.6026|INFO|CustomerWPF_DesktopClient.Views.Cards|Resetting page size to show all.
+2019-08-20 13:14:31.6026|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:14:39.9768|INFO|CustomerWPF_DesktopClient.Views.Cards|Requesting Card Update Form.
+2019-08-20 13:14:39.9768|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Opened Card Update Form.
+2019-08-20 13:14:50.7119|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Card Update was submitted.
+2019-08-20 13:14:50.7119|INFO|CustomerWPF_Windows.CardService|Service verifying Card Update View Model.
+2019-08-20 13:14:50.7119|INFO|CustomerWPF_Windows.CardService|Service approved Card Update View Model.
+2019-08-20 13:14:50.7119|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Card Update succesfully sent to repo.
+2019-08-20 13:14:50.7119|INFO|DAL.CardRepository|Repo updating card with code: 1234567890
+2019-08-20 13:14:50.7119|INFO|CustomerWPF_DesktopClient.Views.Cards|Fetching all Cards from repo.
+2019-08-20 13:14:50.7119|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:14:50.8218|INFO|CustomerWPF_DesktopClient.Views.Cards|Resetting page size to show all.
+2019-08-20 13:14:50.8218|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:15:02.9826|INFO|CustomerWPF_DesktopClient.Views.Cards|Requesting Card Update Form.
+2019-08-20 13:15:02.9826|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Opened Card Update Form.
+2019-08-20 13:15:13.5469|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Card Update was submitted.
+2019-08-20 13:15:13.5469|INFO|CustomerWPF_Windows.CardService|Service verifying Card Update View Model.
+2019-08-20 13:15:13.5469|INFO|CustomerWPF_Windows.CardService|Service approved Card Update View Model.
+2019-08-20 13:15:13.5469|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Card Update succesfully sent to repo.
+2019-08-20 13:15:13.5469|INFO|DAL.CardRepository|Repo updating card with code: f9158f43-8d1a-4
+2019-08-20 13:15:13.5469|INFO|CustomerWPF_DesktopClient.Views.Cards|Fetching all Cards from repo.
+2019-08-20 13:15:13.5469|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:15:13.6186|INFO|CustomerWPF_DesktopClient.Views.Cards|Resetting page size to show all.
+2019-08-20 13:15:13.6186|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:15:15.4566|INFO|CustomerWPF_DesktopClient.Views.Cards|Requesting Card Update Form.
+2019-08-20 13:15:15.4566|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Opened Card Update Form.
+2019-08-20 13:15:24.4301|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Card Update data discarded by user request.
+2019-08-20 13:15:27.3382|INFO|CustomerWPF_DesktopClient.Views.Cards|Requesting Card Update Form.
+2019-08-20 13:15:27.3382|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Opened Card Update Form.
+2019-08-20 13:16:13.4258|INFO|CustomerWPF_DesktopClient.Views.Cards|Requesting Card Creation Form.
+2019-08-20 13:16:13.4258|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardCreationView|Opened Card Creation Form.
+2019-08-20 13:16:28.3260|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:16:28.4181|INFO|CustomerWPF_Windows.CardService|Service fetching page 1 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:28.4181|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:28.4504|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:16:28.4874|INFO|CustomerWPF_Windows.CardService|Service fetching page 1 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:28.4874|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:31.2203|INFO|CustomerWPF_Windows.CardService|Service fetching page 2 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:31.2203|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:31.6994|INFO|CustomerWPF_Windows.CardService|Service fetching page 3 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:31.6994|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:32.1841|INFO|CustomerWPF_Windows.CardService|Service fetching page 4 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:32.1841|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:32.5749|INFO|CustomerWPF_Windows.CardService|Service fetching page 5 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:32.5749|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:33.6960|INFO|CustomerWPF_Windows.CardService|Service fetching page 4 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:33.6960|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:34.3043|INFO|CustomerWPF_Windows.CardService|Service fetching page 3 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:34.3083|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:34.6514|INFO|CustomerWPF_Windows.CardService|Service fetching page 2 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:34.6514|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:35.1481|INFO|CustomerWPF_Windows.CardService|Service fetching page 1 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:35.1521|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:36.9436|INFO|CustomerWPF_Windows.CardService|Service fetching page 2 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:36.9476|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:37.3370|INFO|CustomerWPF_Windows.CardService|Service fetching page 3 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:37.3370|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:37.5471|INFO|CustomerWPF_Windows.CardService|Service fetching page 4 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:37.5471|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:37.7575|INFO|CustomerWPF_Windows.CardService|Service fetching page 5 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:37.7615|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:37.9615|INFO|CustomerWPF_Windows.CardService|Service fetching page 6 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:37.9615|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:38.2804|INFO|CustomerWPF_Windows.CardService|Service fetching page 7 of Cards from Repo. (Page Size: 3).
+2019-08-20 13:16:38.2804|INFO|CustomerWPF_Windows.CardService|Service fetched 3 Cards from Repo.
+2019-08-20 13:16:42.0572|INFO|CustomerWPF_DesktopClient.Views.Cards|Fetching all Cards from repo.
+2019-08-20 13:16:42.0572|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:16:42.1022|INFO|CustomerWPF_DesktopClient.Views.Cards|Resetting page size to show all.
+2019-08-20 13:16:42.1022|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-20 13:16:48.8628|INFO|CustomerWPF_DesktopClient.Views.Cards|Requested return to Main Window.
+2019-08-20 13:16:48.8858|INFO|CustomerWPF_DesktopClient.Views.MainWindow|Main Window opened.
+2019-08-20 13:16:57.9000|DEBUG|CustomerWPF_DesktopClient.Views.MainWindow|"To Customers" Button pressed. 
+2019-08-20 13:16:57.9000|INFO|CustomerWPF_DesktopClient.Views.Customers|Displaying Customers View.
+2019-08-20 13:16:57.9000|INFO|CustomerWPF_DesktopClient.Views.Customers|Fetching all Customers from repo.
+2019-08-20 13:16:57.9000|INFO|CustomerWPF_DesktopClient.Views.Customers|Resetting page size to show all.
+2019-08-20 13:17:30.2136|INFO|CustomerWPF_DesktopClient.Views.Customers|Fetching all Customers from repo.
+2019-08-20 13:17:30.2136|INFO|CustomerWPF_DesktopClient.Views.Customers|Resetting page size to show all.

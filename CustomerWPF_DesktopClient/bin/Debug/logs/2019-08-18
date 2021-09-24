@@ -1,0 +1,6 @@
+2019-08-18 13:09:41.3114|ERROR|CustomerWPF_DesktopClient.App|An exeption has occured
+2019-08-18 13:09:41.4034|INFO|CustomerWPF_DesktopClient.App|Hello log
+2019-08-18 13:09:42.0794|INFO|CustomerWPF_DesktopClient.Common.LogTest|Instance created
+2019-08-18 14:47:22.8745|ERROR|CustomerWPF_DesktopClient.App|An exeption has occured
+2019-08-18 14:47:22.8896|INFO|CustomerWPF_DesktopClient.App|Hello log
+2019-08-18 14:47:23.1706|INFO|CustomerWPF_DesktopClient.Common.LogTest|Instance Created!

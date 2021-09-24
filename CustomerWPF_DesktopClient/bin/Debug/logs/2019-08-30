@@ -1,0 +1,8 @@
+2019-08-30 05:01:02.9524|INFO|CustomerWPF_DesktopClient.Views.MainWindow|Main Window opened.
+2019-08-30 05:01:06.3960|DEBUG|CustomerWPF_DesktopClient.Views.MainWindow|"To Customers" Button pressed. 
+2019-08-30 05:01:06.3960|INFO|CustomerWPF_DesktopClient.Views.Customers|Displaying Customers View.
+2019-08-30 05:01:06.4200|INFO|CustomerWPF_DesktopClient.Views.Customers|Fetching all Customers from repo.
+2019-08-30 05:01:11.3921|INFO|CustomerWPF_DesktopClient.Views.Customers|Resetting page size to show all.
+2019-08-30 05:01:15.6362|INFO|CustomerWPF_DesktopClient.Views.Customers|Requesting Customer Creation Form.
+2019-08-30 05:01:15.6362|INFO|CustomerWPF_DesktopClient.Views.SubViews.CustomerCreationView|Opened Customer Creation Form.
+2019-08-30 05:01:31.6729|INFO|CustomerWPF_DesktopClient.Views.SubViews.CustomerCreationView|Customer Creation data discarded by user request.

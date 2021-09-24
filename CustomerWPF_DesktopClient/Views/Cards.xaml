@@ -1,0 +1,110 @@
+﻿<Window x:Class="CustomerWPF_DesktopClient.Views.Cards"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CustomerWPF_DesktopClient.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="Cards" KeyUp="CardsWindow_KeyUp">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="DataGridCell">
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </Window.Resources>
+    
+    <DockPanel FocusManager.FocusedElement="{Binding ElementName=cardSearchBox}">
+    
+        <!--#region  TopBar-->
+        
+        <DockPanel Height="60" DockPanel.Dock="Top">
+            <Button DockPanel.Dock="Left" x:Name="backToMainBtn" Background="Transparent" Click="BackToMainBtn_Click" ToolTip="Go back to main window.(Escape/Home/Back)">
+                <Image Source="/Art/back.png" MaxHeight="50"/>
+            </Button>
+            <TextBox DockPanel.Dock="Left" x:FieldModifier="public" x:Name="cardSearchBox" GotFocus="CardSearchBox_GotFocus" LostFocus="CardSearchBox_LostFocus" KeyUp="CardSearchBox_KeyUp" FontWeight="UltraLight" FontStyle="Italic" Text="Search..." FontSize="28" Padding="10" Background="LightCoral" Width="650" MaxWidth="650" />
+            <Button DockPanel.Dock="Left" Background="Transparent" Name="cardSearchBtn" Click="CardSearchBtn_Click" KeyUp="CardSearchBtn_KeyUp" ToolTip="Search(Enter)">
+                <Image Source="/Art/search.png" Height="50"/>
+            </Button>
+            <Separator BorderBrush="Aqua"/>
+                <Button DockPanel.Dock="Right" HorizontalAlignment="Right" Background="Transparent" Name="cardsToCutomersBtn" Click="CardsToCutomersBtn_Click" KeyUp="CardsToCutomersBtn_KeyUp" ToolTip="Customers View(,/.)">
+                    <WrapPanel>
+                        <Image Source="/Art/customer.png" Height="50"/>
+                        <Label Content="Customers" VerticalAlignment="Center" FontSize="20"/>
+                    </WrapPanel>
+                </Button>
+                <Separator DockPanel.Dock="Right" BorderBrush="Aqua" BorderThickness="10"/>
+                <Button HorizontalAlignment="Right" DockPanel.Dock="Right" Background="Transparent" Name="CustomersResetFilters" Click="CustomersResetFilters_Click" KeyUp="CustomersResetFilters_KeyUp" ToolTip="Reset View (*)">
+                    <Image Source="/Art/reset.png" Height="50"/>
+                </Button>
+        </DockPanel>
+
+        <!--#endregion-->
+        
+        <!--#region  Pagination-->
+        
+        <DockPanel DockPanel.Dock="Top" Margin="0 4" Background="Azure">
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+                <Label Content="Showing: " FontSize="20"/>
+                <TextBox Background="Transparent" x:FieldModifier="public" x:Name="cardsResultsPerPageTxtBox" Width="50" VerticalAlignment="Center"  FontSize="20" FontWeight="Bold" TextAlignment="Center"  Text="All" KeyUp="CardsResultsPerPageTxtBox_KeyUp" GotFocus="CardsResultsPerPageTxtBox_GotFocus"  LostFocus="CardsResultsPerPageTxtBox_LostFocus" />
+                <Label VerticalAlignment="Center" FontSize="20" Visibility="Hidden" x:FieldModifier="public"  Name="cardPerPageLabel"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" HorizontalAlignment="Right">
+                <Button Name="cardPrevBtn" x:FieldModifier="public" Background="Transparent" Click="CardPrevBtn_Click" KeyUp="CardPrevBtn_KeyUp">
+                    <Image Source="/Art/prevNext.png" Height="30" RenderTransformOrigin="0.5 0.5">
+                        <Image.RenderTransform>
+                            <ScaleTransform ScaleX="-1"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
+                <Label Content="Page: " FontSize="20"/>
+                <TextBlock x:Name="cardPageIndexBlock" x:FieldModifier="public" Text="1"  FontWeight="Bold" VerticalAlignment="Center" FontSize="20"/>
+                <Label Content="of" FontSize="20"/>
+                <TextBlock x:Name="cardPageCountBlock" x:FieldModifier="public" Text="1"  FontWeight="Bold" VerticalAlignment="Center" FontSize="20"/>
+                <Button Name="cardNextBtn" x:FieldModifier="public" Background="Transparent" Click="CardNextBtn_Click" KeyUp="CardNextBtn_KeyUp">
+                    <Image Source="/Art/prevNext.png" Height="30"/>
+                </Button>
+            </StackPanel>
+        </DockPanel>
+
+        
+        <!--#endregion-->
+        
+        <!--#region Datagrid-->
+
+        <DataGrid x:Name="cardsDataGrid" x:FieldModifier="public" CanUserAddRows="False" AutoGenerateColumns="False" ColumnWidth="*"
+                  SelectionMode="Single" SelectionUnit="FullRow" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Card Code" Binding="{Binding CardCode}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="CVV" Binding="{Binding CVVNumber}"/>
+                <DataGridTextColumn Header="Unique Number" Binding="{Binding UniqueNumber}"/>
+                <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate, StringFormat=dd-MMM-yyyy}"/>
+                <DataGridTextColumn Header="End Date" Binding="{Binding EndDate, StringFormat=dd-MMM-yyyy}"/>
+                <DataGridTextColumn Header="Customer Code" Binding="{Binding CustomerCode}"/>
+                <DataGridTemplateColumn Width="50">
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Button x:Name="CardViewAddBtn" Click="CardViewAddBtn_Click" Background="Transparent" ToolTip="New Card(+)">
+                            <Image Source="/Art/plus.png" MaxHeight="50"/>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="cardViewUpdateButton" Click="CardViewUpdateButton_Click" ToolTip="Update">
+                                <Image Source="/Art/update.png" MaxHeight="40"/>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <!--#endregion-->
+        
+    </DockPanel>
+</Window>

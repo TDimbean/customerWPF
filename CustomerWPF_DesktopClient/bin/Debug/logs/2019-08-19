@@ -1,0 +1,20 @@
+2019-08-19 07:04:54.0145|ERROR|CustomerWPF_DesktopClient.App|An exeption has occured
+2019-08-19 07:04:54.0305|INFO|CustomerWPF_DesktopClient.App|Hello log
+2019-08-19 07:04:54.3815|INFO|CustomerWPF_DesktopClient.Views.MainWindow|Main Window opened.
+2019-08-19 07:04:57.3458|DEBUG|CustomerWPF_DesktopClient.Views.MainWindow|"To Cards" Button pressed.
+2019-08-19 07:04:57.3458|INFO|CustomerWPF_DesktopClient.Views.Cards|Displaying Cards View.
+2019-08-19 07:04:57.3958|INFO|CustomerWPF_DesktopClient.Views.Cards|Fetching all Cards from repo.
+2019-08-19 07:05:01.0558|INFO|CustomerWPF_DesktopClient.Views.Cards|Resetting page size to show all.
+2019-08-19 07:05:06.8298|INFO|CustomerWPF_DesktopClient.Views.Cards|Requesting Card Update Form.
+2019-08-19 07:05:12.4028|INFO|CustomerWPF_DesktopClient.Views.Cards|Requesting Card Creation Form.
+2019-08-19 07:05:12.4028|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardCreationView|Opened Card Creation Menu.
+2019-08-19 07:05:20.6481|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardCreationView|Card Creation data discarded by user request.
+2019-08-19 07:05:26.1384|INFO|CustomerWPF_DesktopClient.Views.Cards|Requested return to Main Window.
+2019-08-19 07:05:26.1654|INFO|CustomerWPF_DesktopClient.Views.MainWindow|Main Window opened.
+2019-08-19 10:55:19.9765|INFO|CustomerWPF_DesktopClient.Views.MainWindow|Main Window opened.
+2019-08-19 10:55:21.5834|DEBUG|CustomerWPF_DesktopClient.Views.MainWindow|"To Cards" Button pressed.
+2019-08-19 10:55:21.5844|INFO|CustomerWPF_DesktopClient.Views.Cards|Displaying Cards View.
+2019-08-19 10:55:21.6414|INFO|CustomerWPF_DesktopClient.Views.Cards|Fetching all Cards from repo.
+2019-08-19 10:55:21.6414|INFO|CustomerWPF_Windows.CardService|Service fetching Cards from Repo.
+2019-08-19 10:55:24.6068|INFO|CustomerWPF_DesktopClient.Views.Cards|Resetting page size to show all.
+2019-08-19 10:55:24.6068|INFO|CustomerWPF_Windows.CardService|Service fetching Cards from Repo.

@@ -1,0 +1,5 @@
+2019-08-26 13:08:20.6834|INFO|CustomerWPF_DesktopClient.Views.MainWindow|Main Window opened.
+2019-08-26 13:08:23.0034|DEBUG|CustomerWPF_DesktopClient.Views.MainWindow|"To Customers" Button pressed. 
+2019-08-26 13:08:23.0034|INFO|CustomerWPF_DesktopClient.Views.Customers|Displaying Customers View.
+2019-08-26 13:08:23.0394|INFO|CustomerWPF_DesktopClient.Views.Customers|Fetching all Customers from repo.
+2019-08-26 13:08:23.3484|INFO|CustomerWPF_DesktopClient.Views.Customers|Resetting page size to show all.

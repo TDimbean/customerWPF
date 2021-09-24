@@ -1,0 +1,10 @@
+2019-08-23 11:59:14.0041|INFO|CustomerWPF_DesktopClient.Views.MainWindow|Main Window opened.
+2019-08-23 11:59:15.9325|DEBUG|CustomerWPF_DesktopClient.Views.MainWindow|"To Cards" Button pressed.
+2019-08-23 11:59:15.9325|INFO|CustomerWPF_DesktopClient.Views.Cards|Displaying Cards View.
+2019-08-23 11:59:15.9577|INFO|CustomerWPF_DesktopClient.Views.Cards|Fetching all Cards from repo.
+2019-08-23 11:59:15.9577|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-23 11:59:21.6101|INFO|CustomerWPF_DesktopClient.Views.Cards|Resetting page size to show all.
+2019-08-23 11:59:21.6101|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-23 11:59:36.4207|INFO|CustomerWPF_DesktopClient.Views.Cards|Requesting Card Update Form.
+2019-08-23 11:59:36.4207|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Opened Card Update Form.
+2019-08-23 12:01:12.6027|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardUpdateView|Card Update data discarded by user request.

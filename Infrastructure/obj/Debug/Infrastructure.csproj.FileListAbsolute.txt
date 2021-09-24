@@ -1,0 +1,10 @@
+C:\Users\RoosterMaind\Desktop\Ptterns\CustomerWPF_App\CustomerWPF\Infrastructure\bin\Debug\Infrastructure.dll
+C:\Users\RoosterMaind\Desktop\Ptterns\CustomerWPF_App\CustomerWPF\Infrastructure\bin\Debug\Infrastructure.pdb
+C:\Users\RoosterMaind\Desktop\Ptterns\CustomerWPF_App\CustomerWPF\Infrastructure\obj\Debug\Infrastructure.csprojAssemblyReference.cache
+C:\Users\RoosterMaind\Desktop\Ptterns\CustomerWPF_App\CustomerWPF\Infrastructure\obj\Debug\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\RoosterMaind\Desktop\Ptterns\CustomerWPF_App\CustomerWPF\Infrastructure\obj\Debug\Infrastructure.dll
+C:\Users\RoosterMaind\Desktop\Ptterns\CustomerWPF_App\CustomerWPF\Infrastructure\obj\Debug\Infrastructure.pdb
+C:\Users\RoosterMaind\Desktop\Ptterns\CustomerWPF_App\CustomerWPF\Infrastructure\bin\Debug\NLog.config
+C:\Users\RoosterMaind\Desktop\Ptterns\CustomerWPF_App\CustomerWPF\Infrastructure\bin\Debug\NLog.dll
+C:\Users\RoosterMaind\Desktop\Ptterns\CustomerWPF_App\CustomerWPF\Infrastructure\bin\Debug\NLog.xml
+C:\Users\RoosterMaind\Desktop\Ptterns\CustomerWPF_App\CustomerWPF\Infrastructure\obj\Debug\Infrastructure.csproj.CopyComplete

@@ -1,0 +1,8 @@
+2019-09-06 10:21:56.4007|INFO|CustomerWPF_DesktopClient.Views.MainWindow|Main Window opened.
+2019-09-06 10:21:58.2897|DEBUG|CustomerWPF_DesktopClient.Views.MainWindow|"To Customers" Button pressed. 
+2019-09-06 10:21:58.2897|INFO|CustomerWPF_DesktopClient.Views.Customers|Displaying Customers View.
+2019-09-06 10:21:58.3627|INFO|CustomerWPF_DesktopClient.Views.Customers|Fetching all Customers from repo.
+2019-09-06 10:22:02.0417|INFO|CustomerWPF_DesktopClient.Views.Customers|Resetting page size to show all.
+2019-09-06 10:22:04.8417|INFO|CustomerWPF_DesktopClient.Views.Customers|Requesting Card Update Form.
+2019-09-06 10:22:04.8417|INFO|CustomerWPF_DesktopClient.Views.SubViews.CustomerUpdateView|Opened Customer Update Form.
+2019-09-06 10:22:07.2559|INFO|CustomerWPF_DesktopClient.Views.SubViews.CustomerUpdateView|Customer Update data discarded by user request.

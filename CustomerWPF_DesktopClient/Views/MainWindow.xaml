@@ -1,0 +1,42 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/  expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:CustomerWPF_DesktopClient.ViewModels"
+        xmlns:d1="http://schemas.microsoft.com/expression/blend/2008" xmlns:Entities="clr-namespace:DAL.Entities;assembly=DAL" x:Class="CustomerWPF_DesktopClient.Views.MainWindow"
+        mc:Ignorable="d d1"
+        d:DataContext="{d:DesignInstance viewModels:CustomerViewModel}"
+        Title="MainWindow" Height="600" Width="800" KeyUp="Window_KeyUp">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="100"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Orientation="Vertical" Margin="0 100 0 0" Background="Transparent">
+            <Image Source="/Art/cardsRobust.png" Width="100"/>
+            <Button x:Name="BtnMainToCards" Content="Cards" Click="BtnMainToCards_Click" />
+            <TextBlock  Margin="0 30 0 0"  HorizontalAlignment="Center"  Width ="360" TextWrapping="Wrap" Text="Cards have a CVV, Unique Number, Start Date and Expiration Date. The CVV must not exceed 15 characters, the first 8 being numbers. The UN is limited to 50 characters, the first 4 of which must parse to integer. The dates must be sequential(cards cannot expire before being issued) and no further than 3 years apart."/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="0" Margin="0 100 0 0" Background="Transparent">
+            <Image Source="/Art/customers.png" Width="100"/>
+            <Button x:Name="BtnMainToCustomers" Content="Customers" Click="BtnMainToCustomers_Click"/>
+            <TextBlock  HorizontalAlignment="Center" Width="360" TextWrapping="Wrap" Margin="0 30 0 0"
+                Text="Customers have a name, address and CNP. The name must be made up of two words beginning with capital letters(Max Length: 100). The CNP must have 13 characters and adhere to the CNP format. The address can be no longer than 200 characters"/>
+            
+        </StackPanel>
+    </Grid>
+
+</Window>

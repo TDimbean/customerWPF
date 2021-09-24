@@ -1,0 +1,16 @@
+2019-08-29 05:11:52.8514|INFO|CustomerWPF_DesktopClient.Views.MainWindow|Main Window opened.
+2019-08-29 05:11:56.5874|DEBUG|CustomerWPF_DesktopClient.Views.MainWindow|"To Cards" Button pressed.
+2019-08-29 05:11:56.5874|INFO|CustomerWPF_DesktopClient.Views.Cards|Displaying Cards View.
+2019-08-29 05:11:56.6134|INFO|CustomerWPF_DesktopClient.Views.Cards|Fetching all Cards from repo.
+2019-08-29 05:11:56.6134|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-29 05:12:00.6654|INFO|CustomerWPF_DesktopClient.Views.Cards|Resetting page size to show all.
+2019-08-29 05:12:00.6654|INFO|CustomerWPF_Windows.CardService|Service fetching and converting all Cards from Repo.
+2019-08-29 05:12:07.1324|INFO|CustomerWPF_DesktopClient.Views.Cards|Requesting Card Creation Form.
+2019-08-29 05:12:07.1324|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardCreationView|Opened Card Creation Form.
+2019-08-29 05:12:48.3243|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardCreationView|Card Creation was submitted.
+2019-08-29 05:12:48.3243|WARN|CustomerWPF_DesktopClient.Views.SubViews.CardCreationView|Card Creation failed due to invalid user data.
+2019-08-29 05:13:12.5416|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardCreationView|Card Creation was submitted.
+2019-08-29 05:13:12.5416|WARN|CustomerWPF_DesktopClient.Views.SubViews.CardCreationView|Card Creation failed due to invalid user data.
+2019-08-29 05:13:33.1342|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardCreationView|Card Creation was submitted.
+2019-08-29 05:13:33.1342|WARN|CustomerWPF_DesktopClient.Views.SubViews.CardCreationView|Card Creation failed due to invalid user data.
+2019-08-29 05:13:55.2798|INFO|CustomerWPF_DesktopClient.Views.SubViews.CardCreationView|Card Creation data discarded by user request.

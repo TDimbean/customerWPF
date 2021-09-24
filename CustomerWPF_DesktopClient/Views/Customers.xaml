@@ -1,0 +1,109 @@
+﻿<Window
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    x:Class="CustomerWPF_DesktopClient.Views.Customers"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="900"
+      Title="Customers"
+    KeyUp="CustomersWindow_KeyUp">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="DataGridCell">
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+    </Window.Resources>
+
+    
+    <DockPanel FocusManager.FocusedElement="{Binding ElementName=customerSearchBox}">
+  
+        <!--#region TopBar-->
+        <DockPanel Height="60" DockPanel.Dock="Top">
+            <Button DockPanel.Dock="Left" x:Name="backToMainBtn" Background="Transparent" Click="BackToMainBtn_Click" ToolTip="Go back to main window.(Escape/Home/Back)">
+                <Image Source="/Art/back.png" MaxHeight="50"/>
+            </Button>
+            <TextBox DockPanel.Dock="Left" x:FieldModifier="public" x:Name="customerSearchBox" FontWeight="UltraLight" Foreground="Gray" GotFocus="CustomerSearchBox_GotFocus" LostFocus="CustomerSearchBox_LostFocus" FontStyle="Italic" Text="Search..." FontSize="28" Padding="10" Background="LightCoral" Width="650" MaxWidth="650" KeyUp="CustomerSearchBox_KeyUp"/>
+            <Button DockPanel.Dock="Left" Background="Transparent" x:FieldModifier="public" Name="customerSearchBtn" Click="CustomerSearchBtn_Click" KeyUp="CustomerSearchBtn_KeyUp" ToolTip="Search(Enter)">
+                <Image Source="/Art/search.png" Height="50"/>
+            </Button>
+            <Separator DockPanel.Dock="Left" BorderBrush="Aqua"/>
+            <Button DockPanel.Dock="Right" HorizontalAlignment="Right" Background="Transparent" Name="customerToCardsBtn" Click="CustomerToCardsBtn_Click" KeyUp="CustomerToCardsBtn_KeyUp" ToolTip="Cards View(,/.)">
+                <WrapPanel>
+                    <Image Source="/Art/cardsSimple.png" Height="50"/>
+                    <Label Content="Cards" VerticalAlignment="Center" FontSize="20"/>
+                </WrapPanel>
+            </Button>
+            <Separator DockPanel.Dock="Right" BorderBrush="Aqua" Width="auto" BorderThickness="10"/>
+            <Button DockPanel.Dock="Right" HorizontalAlignment="Right" Background="Transparent" Name="CardsResetBtn" Click="CardsResetBtn_Click" KeyUp="CardsResetBtn_KeyUp" ToolTip="Reset View (*)">
+                <Image Source="/Art/reset.png" Height="50"/>
+            </Button>
+        </DockPanel>
+        
+        <!--#endregion-->
+        
+        <!--#region Pagination-->
+        
+        <DockPanel DockPanel.Dock="Top" Margin="0 4" Background="Azure">
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+            <Label Content="Showing: " FontSize="20"/>
+                <TextBox Background="Transparent" x:Name="custViewResultsPerPageTxtBox" x:FieldModifier="public" Width="50" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" TextAlignment="Center"   Text="All"  KeyUp="CustViewResultsPerPageTxtBox_KeyUp" GotFocus="CustViewResultsPerPageTxtBox_GotFocus" LostFocus="CustViewResultsPerPageTxtBox_LostFocus"/>
+                <Label VerticalAlignment="Center" x:FieldModifier="public" FontSize="20" Visibility="Hidden" Name="custPerPageLabel"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" HorizontalAlignment="Right">
+                <Button Name="custPrevBtn" x:FieldModifier="public" Background="Transparent" Click="CustPrevBtn_Click" KeyUp="CustPrevBtn_KeyUp">
+                    <Image Source="/Art/prevNext.png" Height="30" RenderTransformOrigin="0.5 0.5">
+                        <Image.RenderTransform>
+                            <ScaleTransform ScaleX="-1"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </Button>
+                <Label Content="Page: " FontSize="20"/>
+                <TextBlock x:Name="custPageIndexTxtBlock" x:FieldModifier="public" Text="1"  FontWeight="Bold" VerticalAlignment="Center" FontSize="20"/>
+                <Label Content="of" FontSize="20"/>
+                <TextBlock x:Name="custPageCountTxtBlock" x:FieldModifier="public" Text="1"  FontWeight="Bold" VerticalAlignment="Center" FontSize="20"/>
+                <Button Name="custNextBtn" x:FieldModifier="public" Background="Transparent" Click="CustNextBtn_Click" KeyUp="CustNextBtn_KeyUp">
+                    <Image Source="/Art/prevNext.png" Height="30"/>
+                </Button>
+            </StackPanel>
+        </DockPanel>
+        
+        <!--#endregion-->
+        
+        <!--#region Data Table-->
+        
+        <DataGrid x:Name="customersDataGrid" x:FieldModifier="public" AutoGenerateColumns="False" CanUserAddRows="False" ColumnWidth="*" SelectionMode="Single" SelectionUnit="FullRow" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Customer Code" Binding="{Binding CustomerCode}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="CNP" Binding="{Binding CNP}"/>
+                <DataGridTextColumn Header="Address" Binding="{Binding Address}"/>
+                <DataGridTemplateColumn Width="50">
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <Button x:Name="custViewAddButton" Click="CustViewAddButton_Click" Background="Transparent" ToolTip="New Customer(+)">
+                                <Image Source="/Art/plus.png" MaxHeight="50"/>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="custViewUpdateButton" Click="CustViewUpdateButton_Click" ToolTip="Update">
+                                <Image Source="/Art/update.png" MaxHeight="40"/>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <!--#endregion-->
+        
+    </DockPanel>
+</Window>
